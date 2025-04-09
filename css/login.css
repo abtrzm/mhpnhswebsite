@@ -1,0 +1,301 @@
+/* table{
+    border-collapse: collapse;
+    width: 100%;
+    color: #23231d;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+}
+
+th{
+    background-color: #e8ecd7;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+} */
+/*Footer*/
+.main-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #008749;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+
+.main-footer a {
+    position: sticky;
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    position: sticky;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-design {
+    width: 100%;
+    height: 75px;
+    background-color: #008749;
+    justify-content: left;
+}
+
+h3,
+h5 {
+    font-family: "League Spartan";
+    padding: 3px;
+    justify-content: left;
+}
+
+
+/*error handling design*/
+
+div .error {
+    color: red;
+    font-weight: 900;
+    font-family: "Montserrat";
+    font-size: 15px;
+    height: 6px;
+    /*fixed height of error div haha eto lng*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* keyframe for the animation */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY (30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY (0px) scale(1);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    padding: 30px 10px;
+    animation: fade-up 2s ease;
+}
+div .wrapper{
+    height: 350px;
+    margin-top: 85px;
+}
+.wrapper {
+    background: #fff8e7;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 15px;
+    padding-top: 10px;
+}
+
+/*Back Arrow*/
+.back-arrow i {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    background-color: #008749;
+}
+
+.back-arrow i:hover {
+    color: #23231d;
+    transition: .5s ease;
+}
+
+/* profile picture design */
+.profile img {
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+.profile {
+    width: 110px;
+    margin: 0 auto;
+}
+
+/* login title design */
+.wrapper .title {
+    font-family: "League Spartan", serif;
+    line-height: 0.5;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.8rem;
+    font-weight: 750;
+    margin: 20px 0;
+}
+
+/* login box settings */
+.wrapper {
+    margin: auto;
+    box-shadow: darkgray 0px 30px 90px;
+}
+
+.wrapper form {
+    padding: 25px 30px 25px 30px;
+    gap: 25px;
+}
+
+/* design for the class "row", mainly the icon and the textfields */
+.wrapper form .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input {
+    gap: 19px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 55px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form .row input:focus {
+    border-color: #008749;
+    box-shadow: #23231d;
+}
+
+/* icons design */
+.wrapper form .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    background: #008749;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #008749;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 1px 1px 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+/* forgot password design */
+.wrapper form .pass {
+    margin: 20px 0 20px 0;
+}
+
+.wrapper form .pass a {
+    font-family: "Montserrat", sans;
+    color: #23231d;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+    color: #008749;
+}
+
+/* submit button design */
+.wrapper form .button input {
+    padding-left: 0px;
+    background: #23231d;
+    border: 1px solid #23231d;
+    color: #fff;
+    cursor: pointer;
+    font-family: "League Spartan";
+    font-size: 19px;
+    font-weight: 700;
+}
+
+form .button input:hover {
+    background: #383833;
+}
+
+/* register link design */
+.wrapper form .signup-link {
+    font-family: "Montserrat";
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.wrapper form .signup-link a {
+    color: #008749;
+    text-decoration: none;
+
+}
+
+form .signup-link a:hover {
+    text-decoration: underline;
+    color: #008749;
+}
+
+/* media queries for responsive design */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .wrapper .title {
+        font-size: 1.5rem;
+    }
+
+    .wrapper form .row input {
+        font-size: 14px;
+    }
+
+    .wrapper form .button input {
+        font-size: 16px;
+    }
+
+    .wrapper form .signup-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .wrapper .title {
+        font-size: 1.2rem;
+    }
+
+    .wrapper form .row input {
+        font-size: 12px;
+    }
+
+    .wrapper form .button input {
+        font-size: 14px;
+    }
+
+    .wrapper form .signup-link {
+        font-size: 12px;
+    }
+}
