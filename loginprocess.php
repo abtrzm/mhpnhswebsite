@@ -28,7 +28,7 @@ if ($user = mysqli_fetch_assoc($result)) {
         if ($user['role'] == 'student') {
             header("Location: prototype.php");
         } elseif ($user['role'] == 'admin') {
-            header("Location: admin.html");
+            header("Location: admin.php");
         } else {
             header("Location: login.php");
         }
